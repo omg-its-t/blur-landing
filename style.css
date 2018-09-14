@@ -1,3 +1,54 @@
-img.small{
-	width:15px;
+body{
+	background-color: rgba(0,0,0,.9);
+	margin: 0;
+	color: #fff;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.showcase:hover .content{
+	filter: blur(2px);
+	-webkit-filter: blur(2px);
+}
+
+.showcase:hover::after{
+	filter: blur(0px);
+	-webkit-filter: blur(0px);
+}
+
+/* inserting picture after showcase as if it were in the DOM */
+.showcase::after{
+	content:'';
+	height: 100vh;
+	width: 100%;
+	background-image: url(img/showcase-background.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	display: block;
+	filter: blur(5px);
+	-webkit-filter: blur(5px);
+	transition: all 1s;
+}
+
+.content{
+	position: absolute;  /* puts logo inside of showcase image instead of having it on top */
+	z-index: 1;
+	top: 10%;
+	left: 43%;
+	margin-top: 150px;
+	text-align: right;
+	transition: all 1.2s;
+}
+
+.content .logo{
+	width: 200px;
+}
+
+.content .title{
+	font-size: 2.2rem;
+	margin-top: 1rem;
+}
+
+.content .text{
+	margin-top: .5rem;
 }

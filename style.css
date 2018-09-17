@@ -99,3 +99,56 @@ footer p{
 	margin:0;
 	padding: 2.5rem;
 }
+
+/* add padding for logo and text on medium screeen */
+
+@media(max-width: 800px){
+	.content{
+		margin-right: 1rem;
+	}
+
+/* small screen */
+
+@media(max-width: 560px){
+	.showcase::after{
+	height: 50vh;
+	}
+
+	.content{
+		top: 5%;
+		margin-top: 5px;
+	}
+
+	.content .logo{
+		width: 120px;
+	}
+
+	.content .text{
+		display: none;
+	}
+
+	.content .title{
+		font-size: 1.3rem;
+	}
+
+	.grid-3, .grid-2{
+		grid-template-columns: 1fr; 
+	}
+
+	.services div{
+		border-bottom: #333 solid 1px;
+		padding: 1.2rem 1rem;
+	}
+}
+
+/* landscape view */
+
+@media(max-height: 500px){
+	.content .title, .content .text{
+		display: none;
+	}
+
+	.content{
+		top: 5%;
+	}
+}

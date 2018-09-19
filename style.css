@@ -1,3 +1,4 @@
+/* test */
 body{
 	background-color: rgba(0,0,0,.9);
 	margin: 0;
@@ -132,7 +133,7 @@ footer p{
 	}
 
 	.grid-3, .grid-2{
-		grid-template-columns: 1fr; 
+		grid-template-columns: 1fr;
 	}
 
 	.services div{

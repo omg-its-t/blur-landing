@@ -100,10 +100,14 @@ body{
 	color: #f4f4f4;
 }
 
-.gallery h3{
+.gallery h3,
+.services i
+{
 	transition: all .5s ease-in-out; 
 }
-.gallery h3:hover{
+.gallery h3:hover,
+.services i:hover
+{
 	color:red;
 	transform: scale(1.5);
 }

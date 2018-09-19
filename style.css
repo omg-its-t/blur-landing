@@ -63,6 +63,11 @@ body{
 	padding: 4rem 2.5rem;
 }
 
+.grid-6{
+	display: grid;
+	grid-gap: 25px;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
 .grid-3{
 	display: grid;
 	grid-gap: 25px;
@@ -93,6 +98,14 @@ body{
 .bg-dark{
 	background-color: #333;
 	color: #f4f4f4;
+}
+
+.gallery h3{
+	transition: all .5s ease-in-out; 
+}
+.gallery h3:hover{
+	color:red;
+	transform: scale(1.5);
 }
 
 footer p{
@@ -133,6 +146,9 @@ footer p{
 
 	.grid-3, .grid-2{
 		grid-template-columns: 1fr; 
+	}
+	.grid-6{
+		grid-template-columns: 1fr 1fr; 
 	}
 
 	.services div{
